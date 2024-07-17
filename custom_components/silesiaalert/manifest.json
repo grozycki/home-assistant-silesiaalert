@@ -1,0 +1,17 @@
+{
+  "domain": "silesiaalert",
+  "name": "Silesia Alert",
+  "codeowners": [
+    "@grozycki"
+  ],
+  "config_flow": false,
+  "dependencies": [],
+  "documentation": "https://github.com/grozycki/home-assistant-silesiaalert",
+  "homekit": {},
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/grozycki/home-assistant-silesiaalert/issues",
+  "requirements": ["marshmallow==3.21.0"],
+  "ssdp": [],
+  "version": "0.1.0-alpha",
+  "zeroconf": []
+}
