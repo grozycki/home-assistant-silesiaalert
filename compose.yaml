@@ -1,0 +1,20 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    build:
+      context: ./
+      dockerfile: .docker/homeassistant/Dockerfile
+    restart: unless-stopped
+    privileged: false
+    develop:
+      watch:
+        - action: rebuild
+          path: ./custom_components/silesiaalert
+          target: /config/custom_components/silesiaalert
+    ports:
+      - 8123:8123
+    volumes:
+      - homeassistant-config:/config
+      - ./custom_components/silesiaalert:/config/custom_components/silesiaalert
+volumes:
+  homeassistant-config:

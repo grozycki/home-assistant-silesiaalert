@@ -1,0 +1,7 @@
+#homeassistant~=2024.5.3
+aiohttp~=3.9.5
+certifi~=2024.2.2
+voluptuous~=0.13.1
+mypy~=1.10.0
+pylint~=3.2.2
+shapely~=2.0.4
