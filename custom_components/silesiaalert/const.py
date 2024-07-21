@@ -1,0 +1,2 @@
+def DOMAIN():
+    return None
